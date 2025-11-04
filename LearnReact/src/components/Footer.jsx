@@ -1,19 +1,15 @@
 import React from 'react';
-import './Footer.css';
+import './Header.css'; // or Footer.css if separated
 
-const Footer = (props) => {
+export const Footer = () => {
   return (
     <div className="footer">
-      <div>
-        <h2>
-          © All rights reserved by <span className="headname">LearnReact</span>
-        </h2>
-      </div>
-      <div>
-        <h2>{props.email}</h2>
-      </div>
+      <h2 className="headname">Big Boy Cars</h2>
+      <h2>Drive Luxury. Live Bold.</h2>
+      <p>© 2025 Big Boy Cars | All Rights Reserved</p>
     </div>
   );
 };
+
 
 export default Footer;
