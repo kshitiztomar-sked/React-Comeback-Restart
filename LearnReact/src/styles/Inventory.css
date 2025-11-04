@@ -1,0 +1,56 @@
+.inventory {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #111;
+  color: white;
+}
+
+.inventory h2 {
+  color: #d32f2f;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.car-card {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  width: 350px;
+  transition: transform 0.3s;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.car-card h3 {
+  margin-top: 15px;
+}
+
+.car-card p {
+  color: #ccc;
+  margin: 8px 0;
+}
+
+.car-card button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
