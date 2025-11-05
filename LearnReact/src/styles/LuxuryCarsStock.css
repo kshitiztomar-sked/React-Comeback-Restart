@@ -1,0 +1,130 @@
+/* ========== LUXURY CARS SHOW STYLES ========== */
+
+.luxuryCarsShow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #000;
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px;
+}
+
+/* Card Container */
+.Card-cars {
+  background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+  border: 1px solid #d32f2f;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.Card-cars:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+}
+
+/* Car Image */
+.Card-cars img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #d32f2f;
+}
+
+/* Details Section */
+.Details {
+  padding: 20px;
+  text-align: center;
+}
+
+.Carname {
+  font-size: 1.5rem;
+  color: #ff2b2b;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cardetails {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.carprice {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* View Count */
+.Details p img {
+  width: 20px;
+  vertical-align: middle;
+  filter: invert(28%) sepia(87%) saturate(2000%) hue-rotate(350deg)
+    brightness(100%) contrast(97%);
+}
+
+/* View Button */
+.Details button {
+  background-color: #d32f2f;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Details button:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
+
+.Details button:active {
+  transform: scale(0.98);
+}
+
+/* Highlighted view count — elegant red tone */
+.viewcount {
+  font-size: 1rem;
+  color: #ff2b2b;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.viewcount .count {
+  color: #fff;
+  margin-left: 4px;
+}
+/* Floating view count badge */
+.view-badge {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 43, 43, 0.5);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.Card-cars:hover .view-badge {
+  transform: scale(1.1);
+  background: rgba(255, 43, 43, 1);
+}
+
+/* Ensure positioning context for badge */
+.Card-cars {
+  position: relative;
+}
